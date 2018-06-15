@@ -1,0 +1,101 @@
+read result: 
+{
+    "$source": "nmeaFromFile.GLL.GP",
+    "timestamp": "2018-05-03T10:17:52.000Z",
+    "value": {
+        "latitude": 60.0541,
+        "longitude": 23.505133333333333
+    }
+}
+
+read result: 
+{
+    "$source": "nmeaFromFile.GLL.GP",
+    "timestamp": "2018-05-03T10:17:54.000Z",
+    "value": {
+        "latitude": 60.05405,
+        "longitude": 23.50508333333333
+    }
+}
+
+read result: 
+{
+    "$source": "nmeaFromFile.GLL.GP",
+    "timestamp": "2018-05-03T10:17:56.000Z",
+    "value": {
+        "latitude": 60.054,
+        "longitude": 23.505033333333333
+    }
+}
+
+read result: 
+{
+    "$source": "nmeaFromFile.GLL.GP",
+    "timestamp": "2018-05-03T10:17:56.000Z",
+    "value": {
+        "latitude": 60.054,
+        "longitude": 23.505033333333333
+    }
+}
+
+read result: 
+{
+    "$source": "nmeaFromFile.GLL.GP",
+    "timestamp": "2018-05-03T10:17:56.000Z",
+    "value": {
+        "latitude": 60.054,
+        "longitude": 23.505033333333333
+    }
+}
+
+read result: 
+{
+    "$source": "nmeaFromFile.GLL.GP",
+    "timestamp": "2018-05-03T10:17:56.000Z",
+    "value": {
+        "latitude": 60.054,
+        "longitude": 23.505033333333333
+    }
+}
+
+read result: 
+{
+    "$source": "nmeaFromFile.GLL.GP",
+    "timestamp": "2018-05-03T10:17:56.000Z",
+    "value": {
+        "latitude": 60.054,
+        "longitude": 23.505033333333333
+    }
+}
+
+read result: 
+{
+    "$source": "nmeaFromFile.GLL.GP",
+    "timestamp": "2018-05-03T10:17:56.000Z",
+    "value": {
+        "latitude": 60.054,
+        "longitude": 23.505033333333333
+    }
+}
+
+read result: 
+{
+    "$source": "nmeaFromFile.GLL.GP",
+    "timestamp": "2018-05-03T10:17:56.000Z",
+    "value": {
+        "latitude": 60.054,
+        "longitude": 23.505033333333333
+    }
+}
+
+read result: 
+{
+    "$source": "nmeaFromFile.GLL.GP",
+    "timestamp": "2018-05-03T10:17:56.000Z",
+    "value": {
+        "latitude": 60.054,
+        "longitude": 23.505033333333333
+    }
+}
+
+average read time in seconds: 0.0001857

@@ -1,0 +1,602 @@
+{
+    "self": "urn:mrn:signalk:uuid:705f5f1a-efaf-44aa-9cb8-a0fd6305567c",
+    "sources": {
+        "nmeaFromFile": {
+            "GLL": {
+                "GP": {
+                    "talker": "GP",
+                    "timestamp": "2017-05-03T10:17:52.000Z"
+                },
+                "sentence": "GLL"
+            },
+            "VTG": {
+                "II": {
+                    "talker": "II",
+                    "timestamp": "2018-05-03T08:50:07.512Z"
+                },
+                "sentence": "VTG"
+            },
+            "label": "nmeaFromFile",
+            "type": "NMEA0183"
+        }
+    },
+    "version": "v1.0.0",
+    "vessels": {
+        "urn:mrn:signalk:uuid:c0d79334-4e25-4245-8892-54e8ccc8021d": {
+            "navigation": {
+                "courseOverGroundMagnetic": {
+                    "$source": "nmeaFromFile.VTG.II",
+                    "timestamp": "2018-05-03T08:50:07.512Z",
+                    "value": 3.624350725518971
+                },
+                "courseOverGroundTrue": {
+                    "$source": "nmeaFromFile.VTG.II",
+                    "timestamp": "2018-05-03T08:50:07.512Z",
+                    "value": 3.624350725518971
+                },
+                "position": {
+                    "$source": "nmeaFromFile.GLL.GP",
+                    "timestamp": "2017-05-03T10:17:52.000Z",
+                    "value": {
+                        "latitude": 50.0541,
+                        "longitude": 13.505133333333333
+                    }
+                },
+                "speedOverGround": {
+                    "$source": "nmeaFromFile.VTG.II",
+                    "timestamp": "2018-05-03T08:50:07.512Z",
+                    "value": 3.0866674486224204
+                }
+            },
+            "uuid": "urn:mrn:signalk:uuid:c0d79334-4e25-4245-8892-54e8ccc8021d"
+        }
+    }
+}
+
+{
+    "self": "urn:mrn:signalk:uuid:705f5f1a-efaf-44aa-9cb8-a0fd6305567c",
+    "sources": {
+        "nmeaFromFile": {
+            "DBT": {
+                "II": {
+                    "talker": "II",
+                    "timestamp": "2018-05-03T08:50:07.711Z"
+                },
+                "sentence": "DBT"
+            },
+            "GLL": {
+                "GP": {
+                    "talker": "GP",
+                    "timestamp": "2018-05-03T10:17:52.000Z"
+                },
+                "sentence": "GLL"
+            },
+            "MWV": {
+                "II": {
+                    "talker": "II",
+                    "timestamp": "2018-05-03T08:50:07.612Z"
+                },
+                "sentence": "MWV"
+            },
+            "VDR": {
+                "II": {
+                    "talker": "II",
+                    "timestamp": "2018-05-03T08:50:07.914Z"
+                },
+                "sentence": "VDR"
+            },
+            "VHW": {
+                "II": {
+                    "talker": "II",
+                    "timestamp": "2018-05-03T08:50:07.914Z"
+                },
+                "sentence": "VHW"
+            },
+            "VTG": {
+                "II": {
+                    "talker": "II",
+                    "timestamp": "2018-05-03T08:50:07.512Z"
+                },
+                "sentence": "VTG"
+            },
+            "label": "nmeaFromFile",
+            "type": "NMEA0183"
+        }
+    },
+    "version": "v1.0.0",
+    "vessels": {
+        "urn:mrn:signalk:uuid:c0d79334-4e25-4245-8892-54e8ccc8021d": {
+            "environment": {
+                "current": {
+                    "$source": "nmeaFromFile.VDR.II",
+                    "timestamp": "2018-05-03T08:50:07.914Z",
+                    "value": {
+                        "drift": 0.0,
+                        "setMagnetic": 0.0,
+                        "setTrue": 0.0
+                    }
+                },
+                "depth": {
+                    "belowTransducer": {
+                        "$source": "nmeaFromFile.DBT.II",
+                        "timestamp": "2018-05-03T08:50:07.711Z",
+                        "value": 20.59
+                    }
+                },
+                "wind": {
+                    "angleTrueWater": {
+                        "$source": "nmeaFromFile.MWV.II",
+                        "timestamp": "2018-05-03T08:50:07.612Z",
+                        "value": 0.24434609533499757
+                    },
+                    "speedTrue": {
+                        "$source": "nmeaFromFile.MWV.II",
+                        "timestamp": "2018-05-03T08:50:07.612Z",
+                        "value": 4.079545477929299
+                    }
+                }
+            },
+            "navigation": {
+                "courseOverGroundMagnetic": {
+                    "$source": "nmeaFromFile.VTG.II",
+                    "timestamp": "2018-05-03T08:50:07.512Z",
+                    "value": 3.624350725518971
+                },
+                "courseOverGroundTrue": {
+                    "$source": "nmeaFromFile.VTG.II",
+                    "timestamp": "2018-05-03T08:50:07.512Z",
+                    "value": 3.624350725518971
+                },
+                "position": {
+                    "$source": "nmeaFromFile.GLL.GP",
+                    "timestamp": "2018-05-03T10:17:52.000Z",
+                    "value": {
+                        "latitude": 60.0541,
+                        "longitude": 23.505133333333333
+                    }
+                },
+                "speedOverGround": {
+                    "$source": "nmeaFromFile.VTG.II",
+                    "timestamp": "2018-05-03T08:50:07.512Z",
+                    "value": 3.0866674486224204
+                },
+                "speedThroughWater": {
+                    "$source": "nmeaFromFile.VHW.II",
+                    "timestamp": "2018-05-03T08:50:07.914Z",
+                    "value": 3.199845255071909
+                }
+            },
+            "uuid": "urn:mrn:signalk:uuid:c0d79334-4e25-4245-8892-54e8ccc8021d"
+        }
+    }
+}
+
+{
+    "self": "urn:mrn:signalk:uuid:705f5f1a-efaf-44aa-9cb8-a0fd6305567c",
+    "sources": {
+        "nmeaFromFile": {
+            "DBT": {
+                "II": {
+                    "talker": "II",
+                    "timestamp": "2018-05-03T08:50:08.113Z"
+                },
+                "sentence": "DBT"
+            },
+            "GLL": {
+                "GP": {
+                    "talker": "GP",
+                    "timestamp": "2018-05-03T10:17:54.000Z"
+                },
+                "sentence": "GLL"
+            },
+            "MWV": {
+                "II": {
+                    "talker": "II",
+                    "timestamp": "2018-05-03T08:50:08.013Z"
+                },
+                "sentence": "MWV"
+            },
+            "VDR": {
+                "II": {
+                    "talker": "II",
+                    "timestamp": "2018-05-03T08:50:07.914Z"
+                },
+                "sentence": "VDR"
+            },
+            "VHW": {
+                "II": {
+                    "talker": "II",
+                    "timestamp": "2018-05-03T08:50:07.914Z"
+                },
+                "sentence": "VHW"
+            },
+            "VPW": {
+                "II": {
+                    "talker": "II",
+                    "timestamp": "2018-05-03T08:50:07.914Z"
+                },
+                "sentence": "VPW"
+            },
+            "VTG": {
+                "II": {
+                    "talker": "II",
+                    "timestamp": "2018-05-03T08:50:08.012Z"
+                },
+                "sentence": "VTG"
+            },
+            "label": "nmeaFromFile",
+            "type": "NMEA0183"
+        }
+    },
+    "version": "v1.0.0",
+    "vessels": {
+        "urn:mrn:signalk:uuid:c0d79334-4e25-4245-8892-54e8ccc8021d": {
+            "environment": {
+                "current": {
+                    "$source": "nmeaFromFile.VDR.II",
+                    "timestamp": "2018-05-03T08:50:07.914Z",
+                    "value": {
+                        "drift": 0.0,
+                        "setMagnetic": 0.0,
+                        "setTrue": 0.0
+                    }
+                },
+                "depth": {
+                    "belowTransducer": {
+                        "$source": "nmeaFromFile.DBT.II",
+                        "timestamp": "2018-05-03T08:50:08.113Z",
+                        "value": 20.61
+                    }
+                },
+                "wind": {
+                    "angleApparent": {
+                        "$source": "nmeaFromFile.MWV.II",
+                        "timestamp": "2018-05-03T08:50:08.013Z",
+                        "value": 0.12217304766749879
+                    },
+                    "angleTrueWater": {
+                        "$source": "nmeaFromFile.MWV.II",
+                        "timestamp": "2018-05-03T08:50:07.612Z",
+                        "value": 0.24434609533499757
+                    },
+                    "speedApparent": {
+                        "$source": "nmeaFromFile.MWV.II",
+                        "timestamp": "2018-05-03T08:50:08.013Z",
+                        "value": 7.299968515992024
+                    },
+                    "speedTrue": {
+                        "$source": "nmeaFromFile.MWV.II",
+                        "timestamp": "2018-05-03T08:50:07.612Z",
+                        "value": 4.079545477929299
+                    }
+                }
+            },
+            "navigation": {
+                "courseOverGroundMagnetic": {
+                    "$source": "nmeaFromFile.VTG.II",
+                    "timestamp": "2018-05-03T08:50:08.012Z",
+                    "value": 3.616147678032725
+                },
+                "courseOverGroundTrue": {
+                    "$source": "nmeaFromFile.VTG.II",
+                    "timestamp": "2018-05-03T08:50:08.012Z",
+                    "value": 3.616147678032725
+                },
+                "position": {
+                    "$source": "nmeaFromFile.GLL.GP",
+                    "timestamp": "2018-05-03T10:17:54.000Z",
+                    "value": {
+                        "latitude": 60.05405,
+                        "longitude": 23.50508333333333
+                    }
+                },
+                "speedOverGround": {
+                    "$source": "nmeaFromFile.VTG.II",
+                    "timestamp": "2018-05-03T08:50:08.012Z",
+                    "value": 3.0866674486224204
+                },
+                "speedThroughWater": {
+                    "$source": "nmeaFromFile.VHW.II",
+                    "timestamp": "2018-05-03T08:50:07.914Z",
+                    "value": 3.199845255071909
+                }
+            },
+            "performance": {
+                "velocityMadeGood": {
+                    "$source": "nmeaFromFile.VPW.II",
+                    "timestamp": "2018-05-03T08:50:07.914Z",
+                    "value": 3.1072452316132364
+                }
+            },
+            "uuid": "urn:mrn:signalk:uuid:c0d79334-4e25-4245-8892-54e8ccc8021d"
+        }
+    }
+}
+
+{
+    "self": "urn:mrn:signalk:uuid:705f5f1a-efaf-44aa-9cb8-a0fd6305567c",
+    "sources": {
+        "nmeaFromFile": {
+            "DBT": {
+                "II": {
+                    "talker": "II",
+                    "timestamp": "2018-05-03T08:50:08.113Z"
+                },
+                "sentence": "DBT"
+            },
+            "GLL": {
+                "GP": {
+                    "talker": "GP",
+                    "timestamp": "2018-05-03T10:17:54.000Z"
+                },
+                "sentence": "GLL"
+            },
+            "MWV": {
+                "II": {
+                    "talker": "II",
+                    "timestamp": "2018-05-03T08:50:08.413Z"
+                },
+                "sentence": "MWV"
+            },
+            "VDR": {
+                "II": {
+                    "talker": "II",
+                    "timestamp": "2018-05-03T08:50:08.315Z"
+                },
+                "sentence": "VDR"
+            },
+            "VHW": {
+                "II": {
+                    "talker": "II",
+                    "timestamp": "2018-05-03T08:50:08.315Z"
+                },
+                "sentence": "VHW"
+            },
+            "VPW": {
+                "II": {
+                    "talker": "II",
+                    "timestamp": "2018-05-03T08:50:08.315Z"
+                },
+                "sentence": "VPW"
+            },
+            "VTG": {
+                "II": {
+                    "talker": "II",
+                    "timestamp": "2018-05-03T08:50:08.413Z"
+                },
+                "sentence": "VTG"
+            },
+            "label": "nmeaFromFile",
+            "type": "NMEA0183"
+        }
+    },
+    "version": "v1.0.0",
+    "vessels": {
+        "urn:mrn:signalk:uuid:c0d79334-4e25-4245-8892-54e8ccc8021d": {
+            "environment": {
+                "current": {
+                    "$source": "nmeaFromFile.VDR.II",
+                    "timestamp": "2018-05-03T08:50:08.315Z",
+                    "value": {
+                        "drift": 0.0,
+                        "setMagnetic": 0.0,
+                        "setTrue": 0.0
+                    }
+                },
+                "depth": {
+                    "belowTransducer": {
+                        "$source": "nmeaFromFile.DBT.II",
+                        "timestamp": "2018-05-03T08:50:08.113Z",
+                        "value": 20.61
+                    }
+                },
+                "wind": {
+                    "angleApparent": {
+                        "$source": "nmeaFromFile.MWV.II",
+                        "timestamp": "2018-05-03T08:50:08.013Z",
+                        "value": 0.12217304766749879
+                    },
+                    "angleTrueWater": {
+                        "$source": "nmeaFromFile.MWV.II",
+                        "timestamp": "2018-05-03T08:50:08.413Z",
+                        "value": 0.2792526803828544
+                    },
+                    "speedApparent": {
+                        "$source": "nmeaFromFile.MWV.II",
+                        "timestamp": "2018-05-03T08:50:08.013Z",
+                        "value": 7.299968515992024
+                    },
+                    "speedTrue": {
+                        "$source": "nmeaFromFile.MWV.II",
+                        "timestamp": "2018-05-03T08:50:08.413Z",
+                        "value": 3.8892009852642495
+                    }
+                }
+            },
+            "navigation": {
+                "courseOverGroundMagnetic": {
+                    "$source": "nmeaFromFile.VTG.II",
+                    "timestamp": "2018-05-03T08:50:08.413Z",
+                    "value": 3.600963313536907
+                },
+                "courseOverGroundTrue": {
+                    "$source": "nmeaFromFile.VTG.II",
+                    "timestamp": "2018-05-03T08:50:08.413Z",
+                    "value": 3.600963313536907
+                },
+                "position": {
+                    "$source": "nmeaFromFile.GLL.GP",
+                    "timestamp": "2018-05-03T10:17:54.000Z",
+                    "value": {
+                        "latitude": 60.05405,
+                        "longitude": 23.50508333333333
+                    }
+                },
+                "speedOverGround": {
+                    "$source": "nmeaFromFile.VTG.II",
+                    "timestamp": "2018-05-03T08:50:08.413Z",
+                    "value": 3.0866674486224204
+                },
+                "speedThroughWater": {
+                    "$source": "nmeaFromFile.VHW.II",
+                    "timestamp": "2018-05-03T08:50:08.315Z",
+                    "value": 3.215278592315021
+                }
+            },
+            "performance": {
+                "velocityMadeGood": {
+                    "$source": "nmeaFromFile.VPW.II",
+                    "timestamp": "2018-05-03T08:50:08.315Z",
+                    "value": 3.0815230028747167
+                }
+            },
+            "uuid": "urn:mrn:signalk:uuid:c0d79334-4e25-4245-8892-54e8ccc8021d"
+        }
+    }
+}
+
+{
+    "self": "urn:mrn:signalk:uuid:705f5f1a-efaf-44aa-9cb8-a0fd6305567c",
+    "sources": {
+        "nmeaFromFile": {
+            "DBT": {
+                "II": {
+                    "talker": "II",
+                    "timestamp": "2018-05-03T08:50:08.613Z"
+                },
+                "sentence": "DBT"
+            },
+            "GLL": {
+                "GP": {
+                    "talker": "GP",
+                    "timestamp": "2018-05-03T10:17:56.000Z"
+                },
+                "sentence": "GLL"
+            },
+            "MWV": {
+                "II": {
+                    "talker": "II",
+                    "timestamp": "2018-05-03T08:50:08.413Z"
+                },
+                "sentence": "MWV"
+            },
+            "VDR": {
+                "II": {
+                    "talker": "II",
+                    "timestamp": "2018-05-03T08:50:08.715Z"
+                },
+                "sentence": "VDR"
+            },
+            "VHW": {
+                "II": {
+                    "talker": "II",
+                    "timestamp": "2018-05-03T08:50:08.815Z"
+                },
+                "sentence": "VHW"
+            },
+            "VPW": {
+                "II": {
+                    "talker": "II",
+                    "timestamp": "2018-05-03T08:50:08.815Z"
+                },
+                "sentence": "VPW"
+            },
+            "VTG": {
+                "II": {
+                    "talker": "II",
+                    "timestamp": "2018-05-03T08:50:08.413Z"
+                },
+                "sentence": "VTG"
+            },
+            "label": "nmeaFromFile",
+            "type": "NMEA0183"
+        }
+    },
+    "version": "v1.0.0",
+    "vessels": {
+        "urn:mrn:signalk:uuid:c0d79334-4e25-4245-8892-54e8ccc8021d": {
+            "environment": {
+                "current": {
+                    "$source": "nmeaFromFile.VDR.II",
+                    "timestamp": "2018-05-03T08:50:08.715Z",
+                    "value": {
+                        "drift": 0.0,
+                        "setMagnetic": 0.0,
+                        "setTrue": 0.0
+                    }
+                },
+                "depth": {
+                    "belowTransducer": {
+                        "$source": "nmeaFromFile.DBT.II",
+                        "timestamp": "2018-05-03T08:50:08.613Z",
+                        "value": 20.66
+                    }
+                },
+                "wind": {
+                    "angleApparent": {
+                        "$source": "nmeaFromFile.MWV.II",
+                        "timestamp": "2018-05-03T08:50:08.013Z",
+                        "value": 0.12217304766749879
+                    },
+                    "angleTrueWater": {
+                        "$source": "nmeaFromFile.MWV.II",
+                        "timestamp": "2018-05-03T08:50:08.413Z",
+                        "value": 0.2792526803828544
+                    },
+                    "speedApparent": {
+                        "$source": "nmeaFromFile.MWV.II",
+                        "timestamp": "2018-05-03T08:50:08.013Z",
+                        "value": 7.299968515992024
+                    },
+                    "speedTrue": {
+                        "$source": "nmeaFromFile.MWV.II",
+                        "timestamp": "2018-05-03T08:50:08.413Z",
+                        "value": 3.8892009852642495
+                    }
+                }
+            },
+            "navigation": {
+                "courseOverGroundMagnetic": {
+                    "$source": "nmeaFromFile.VTG.II",
+                    "timestamp": "2018-05-03T08:50:08.413Z",
+                    "value": 3.600963313536907
+                },
+                "courseOverGroundTrue": {
+                    "$source": "nmeaFromFile.VTG.II",
+                    "timestamp": "2018-05-03T08:50:08.413Z",
+                    "value": 3.600963313536907
+                },
+                "position": {
+                    "$source": "nmeaFromFile.GLL.GP",
+                    "timestamp": "2018-05-03T10:17:56.000Z",
+                    "value": {
+                        "latitude": 60.054,
+                        "longitude": 23.505033333333333
+                    }
+                },
+                "speedOverGround": {
+                    "$source": "nmeaFromFile.VTG.II",
+                    "timestamp": "2018-05-03T08:50:08.413Z",
+                    "value": 3.0866674486224204
+                },
+                "speedThroughWater": {
+                    "$source": "nmeaFromFile.VHW.II",
+                    "timestamp": "2018-05-03T08:50:08.815Z",
+                    "value": 3.2204230380627252
+                }
+            },
+            "performance": {
+                "velocityMadeGood": {
+                    "$source": "nmeaFromFile.VPW.II",
+                    "timestamp": "2018-05-03T08:50:08.815Z",
+                    "value": 3.1226785688563488
+                }
+            },
+            "uuid": "urn:mrn:signalk:uuid:c0d79334-4e25-4245-8892-54e8ccc8021d"
+        }
+    }
+}
+
+
+
+average update time in seconds: 0.000229792
